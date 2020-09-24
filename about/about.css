@@ -1,0 +1,115 @@
+body {
+    background: url("../images/nurnberg.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar {
+    transition: all 0.4s;
+    margin-left: 455px;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+#left {
+    float: left;
+    opacity: .97;
+    display: block;
+    margin-top: 70px;
+    margin-left: 230px;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50%;
+    height: 550px;
+    width: 420px;
+}
+
+#right {
+    float: right;
+    /* opacity: .5; */
+    display: block;
+    margin-left: auto;
+    margin-right: 30px;
+    width: 50%;
+    border-radius: 8px;
+    margin-top: 70px;
+    position: relative;
+    background-image: url("../images/trier-london.jpeg") no-repeat;
+    background-image: no-repeat;
+    background-size: 300px 100px;
+}
+
+h2 {
+    position: absolute; 
+    top: 200px; 
+    left: 0; 
+    width: 100%;
+    float: right;
+    color: thistle;
+}
+
+.icon-top {
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-top: 70px;
+    margin-left: 290px;
+    margin-right: auto;
+}
+
+.icon-below {
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-right: auto; 
+}
+
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+}
